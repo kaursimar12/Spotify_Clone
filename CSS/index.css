@@ -1,0 +1,412 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ul li{
+  list-style: none;
+}
+body{
+    background-image: linear-gradient(
+    #1db954,
+    rgba(44, 44, 44, 0.952),
+    rgb(34, 34, 34),
+    rgb(24, 24, 24),
+    rgb(14, 14, 14)
+  );
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leftbar{
+  width: 15vw;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  color: white;
+}
+
+.brand{
+  margin: 10px;
+  filter: invert(100%);
+  height: 40px;
+  width: 40px;
+}
+
+.bars{
+  cursor: pointer;
+  filter: invert(100%);
+  height: 35px;
+  width: 30px;
+  margin: 8px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spotify{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.active{
+  background-color: rgb(41, 41, 41);
+  border-radius: 5px;
+  height: 60px;
+  align-items: center;
+}
+.lists{
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.icons{
+  filter: invert(100%);
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.menu{
+  margin-top: 20px;
+}
+.upperbar2{
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0px;
+  left: 15%;
+  width: 83vw;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  z-index: 1;
+}
+.side{
+  display: flex;
+  margin-right: 5px;
+}
+.btn{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin: 10px 5px;
+  height: 30px;
+  width: 90px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+.maincontent{
+  position: fixed;
+  width: 80vw;
+  height: inherit;
+  top: 0rem;
+  left: 20vw;
+  padding-top: 5rem;
+  overflow-y: scroll;
+}
+.mainimg{
+  display: flex;
+  height: 60vh;
+  width: 80vw;
+}
+.people{
+  height: 50vh;
+  width: 70vw;
+  border-radius: 10px;
+}
+.heading{
+  font-size: 4rem;
+  font-weight: bolder;
+  color: white;
+}
+.unseen{
+  display: none;
+}
+.seen{
+  display: block;
+}
+.playlist{
+  color: white;
+  height: auto;
+  margin-top: 6rem;
+  display: flex;
+  padding-bottom: 171px;
+}
+.song_img{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+.col1{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.top{
+  padding-left: 40%;
+}
+.title{
+  font-weight: lighter;
+  font-size: 20px;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 21px;
+  box-shadow: inset 0px -1px 0px 0px #5c5c5c;
+}
+.box{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.singer{
+  font-size: 71%;
+  font-weight: lighter;
+}
+.col2{
+  width: 30%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.row{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.col3{
+  width:10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clock{
+  filter: invert(100%);
+  height: 25px;
+  width: 25px;
+  font-weight: lighter;
+}
+.duration{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.part{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.col4{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.play{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playimg{
+  cursor: pointer;
+  height: 21px;
+  width: 21px;
+}
+.number{
+  margin-right: 20%;
+}
+.images{
+  margin-right: 10%;
+}
+footer{
+  color: white;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  background-color:rgb(28, 28, 28);
+  height: 14vh;
+  width: 98.7%;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  align-items: center;
+}
+.subpart1{
+  padding: 0% 2%;
+  position: fixed;
+  display: flex;
+  color: white;
+  width: box-size;
+  align-items: center;
+}
+#gif{
+  width: 8%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+#curr-img{
+  margin: 0% 2%;
+  width: 7%;
+  border-radius: 10px;
+}
+#curr{
+  font-size: 151%;
+}
+#curr-author{
+  font-size: 60%;
+  font-weight: lighter;
+}
+.subpart2{
+  position: fixed;
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 25%;
+}
+#mybar{
+  cursor: pointer;
+  height: 0.3rem;
+  width:41vw;
+}
+.iconss{
+  width: 51vw;
+  display: flex;
+  margin-bottom: 1%;
+  justify-content: center;
+  align-items: center;
+}
+#play-size{
+  padding-right:2%;
+  cursor: pointer;
+  width: 1.5rem;
+}
+.same{
+  padding: 0% 2%;
+  cursor: pointer;
+  filter: invert(100%);
+  width: 1rem;
+}
+.scroll-bar{
+  color:white;
+  display: flex;
+  align-items: center;
+}
+.subpart3{
+  position: fixed;
+  display: flex;
+  color: white;
+  align-items: center;
+  margin: 0% 81%;
+}
+.queue{
+  margin: 0% 2%;
+  cursor: pointer;
+  filter: invert(100%);
+  width: 1.5rem;
+}
+.lyrics{
+  margin: 0% 2%;
+  cursor: pointer;
+  filter: invert(100%);
+  width: 1.5rem;
+}
+.volume{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  filter: invert(100%);
+  width: 15rem;
+}
+.soundimg{
+  margin: 0% 2%;
+  width:10%;
+}
+#volumebar{
+  cursor: pointer;
+  width: 7vw;
+}
+@media only screen and (max-width:1000px) {
+  .curr-song{
+    display: none;
+  }
+  #volumebar{
+
+    width:6rem;
+    position: relative;
+    transform: rotate(270deg);
+    top: -65px;
+    right: 65px;
+  }
+  .spotify{
+    display: none;
+  }
+  .listname{
+    display: none;
+  }
+  .title{
+    font-size: 1rem;
+  }
+  .col1{
+    font-size: 80%;
+  }
+  .col2{
+    font-size: 80%;
+  }
+  .col3{
+    font-size: 80%;
+  }
+  .col3{
+    font-size: 80%;
+  }
+.songimg{
+  height: 40px;
+  width: 40px;
+ } 
+ .progressbar{
+  padding:10vw;
+ }
+ #mybar{
+  cursor: pointer;
+  height: 0.3rem;
+  width: 31vw;
+}
+.start-time{
+  font-size: 0.7rem;
+}
+#end-time{
+  font-size: 0.7rem;
+}
+.queue{
+  width: 1rem;
+  margin: 0% 1%;
+}
+.lyrics{
+  width:1rem;
+  margin:0% 1%
+}
+.songimg{
+  width: 0.3%;
+  margin: 0% 1%;
+}
+#curr{
+  font-size: 10px;
+}
+#curr-author{
+  font-size: 10px;
+}
+.subpart2{
+  padding-left: 10px;
+}
+}
